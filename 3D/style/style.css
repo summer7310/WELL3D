@@ -1,0 +1,78 @@
+@CHARSET "UTF-8";
+
+html,body{
+	height:100%;
+	overflow:hidden;
+}
+
+body{
+	margin:0;
+	padding:0;
+	color:#333;
+	font-family:'Microsoft YaHei', SimHei;
+	font-size:13px;
+	text-align:center;
+	position: relative;
+	 
+	overflow:hidden;
+}
+
+h1,h2,h3,h4,h5,h6,ul{
+	padding:0;
+	margin:0;
+}
+
+ul{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+
+
+#list{
+	width:140px;
+	height:400px;
+	position:absolute;
+	right:10px;
+	top:10px;
+	border:1px #444 solid;
+	border-radius:5px;
+	background:#f9f9f9;
+	box-shadow: 0px 0px 4px #333;
+	-webkit-box-shadow: 0px 0px 4px #333;
+}
+
+#list{
+	margin:10px;
+	
+}
+
+#list li{
+	padding:5px 0  5px 10px;
+	text-align:left;
+	cursor:pointer;
+}
+
+#list li:hover{
+	background:#3B5998;
+	color:#fff;
+	
+}
+
+#list .selected{
+	background:#3B5998;
+	color:#fff;
+	
+}
+
+
+#title{
+	line-height:34px;
+	height:34px;
+	text-align:left;
+	padding: 0 0 0 10px;
+	clear:both;
+	background: url(../../img/button_bg.png) repeat-x 0 -40px #f2f2f2;
+	border-bottom:1px #ccc solid;
+	
+}
