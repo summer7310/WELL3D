@@ -59,7 +59,7 @@ function init(){
 		
 		//添加前剖面单个管孔	
 		var geometry = new THREE.CubeGeometry(3, 3, 1.1);
-		var map = THREE.ImageUtils.loadTexture('images/12.png');
+		var map = THREE.ImageUtils.loadTexture('WELL3D/images/12.png');
     	map.wrapS = map.wrapT = THREE.RepeatWrapping;
    		map.repeat.set(1,1);
 		var material = new THREE.MeshLambertMaterial({ map : map,transparent:true});
@@ -94,7 +94,7 @@ function init(){
 	 */
 	function draw_profile(){
 		var geometry = new THREE.CubeGeometry(1, 40, 40);
-        var mapUrl = "images/23.png";
+        var mapUrl = "WELL3D/images/23.png";
         var map = THREE.ImageUtils.loadTexture(mapUrl);
         map.wrapS = map.wrapT = THREE.RepeatWrapping;
     	map.repeat.set(1,1);     
@@ -125,7 +125,7 @@ function init(){
 //添加工井地面
 	function draw_earth(){
 		geometry = new THREE.PlaneGeometry(66, 66, 0, 0);
-		var map = THREE.ImageUtils.loadTexture('images/Mercury.jpg');
+		var map = THREE.ImageUtils.loadTexture('WELL3D/images/Mercury.jpg');
     	map.repeat.set(1,1);
   	 	map.wrapS = map.wrapT = THREE.MirroredRepeatWrapping;
    		material = new THREE.MeshLambertMaterial({ambient:0xffffff, map : map});
@@ -138,7 +138,7 @@ function init(){
 		//添加工井上面
 	function draw_upface(){
 		geometry = new THREE.PlaneGeometry(0, 0, 0, 0);
-		var map = THREE.ImageUtils.loadTexture('images/ball_texture.jpg');
+		var map = THREE.ImageUtils.loadTexture('WELL3D/images/ball_texture.jpg');
     	map.repeat.set(1,1);
   	 	map.wrapS = map.wrapT = THREE.MirroredRepeatWrapping;
    		material = new THREE.MeshLambertMaterial({ambient:0xffffff, map : map});
@@ -186,7 +186,7 @@ function init(){
 				pipe_holex[j] = j*(hx_span + hr);
 				var y = hy_start + pipe_holex[j]
 				var geometry = new THREE.CubeGeometry(hr, hr, 1.1);
-				var map = THREE.ImageUtils.loadTexture('images/12.png');
+				var map = THREE.ImageUtils.loadTexture('WELL3D/images/12.png');
 		    	map.wrapS = map.wrapT = THREE.RepeatWrapping;
 		   		map.repeat.set(1,1);
 				var material = new THREE.MeshLambertMaterial({ map : map,transparent: true});
@@ -206,7 +206,7 @@ function init(){
 			for(var j=0;j<3;j++){
 				pipe_holey[j] = j*3+10;
 				var geometry = new THREE.CubeGeometry(3, 3, 1.1);
-				var map = THREE.ImageUtils.loadTexture('images/12.png');
+				var map = THREE.ImageUtils.loadTexture('WELL3D/images/12.png');
 		    	map.wrapS = map.wrapT = THREE.RepeatWrapping;
 		   		map.repeat.set(1,1);
 				var material = new THREE.MeshLambertMaterial({ map : map,transparent:true});
@@ -226,7 +226,7 @@ function init(){
 			for(var j=0;j<3;j++){
 				pipe_holey[j] = j*3+10;
 				var geometry = new THREE.CubeGeometry(1.1, 3, 3);
-				var map = THREE.ImageUtils.loadTexture('images/12.png');
+				var map = THREE.ImageUtils.loadTexture('WELL3D/images/12.png');
 		    	map.wrapS = map.wrapT = THREE.RepeatWrapping;
 		   		map.repeat.set(1,1);
 				var material = new THREE.MeshLambertMaterial({ map : map,transparent:true});
@@ -246,7 +246,7 @@ function init(){
 			for(var j=0;j<3;j++){
 				pipe_holey[j] = j*3+10;
 				var geometry = new THREE.CubeGeometry(1.1, 3, 3);
-				var map = THREE.ImageUtils.loadTexture('images/12.png');
+				var map = THREE.ImageUtils.loadTexture('WELL3D/images/12.png');
 		    	map.wrapS = map.wrapT = THREE.RepeatWrapping;
 		   		map.repeat.set(1,1);
 				var material = new THREE.MeshLambertMaterial({ map : map,transparent:true});
